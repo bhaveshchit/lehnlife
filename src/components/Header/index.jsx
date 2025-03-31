@@ -4,12 +4,12 @@ import DesktopMenu from './DesktopMenu';
 import MobileMenu from './MobileMenu';
 
 const sections = [
-  { title: 'Home', url: '/', icon: '🏠' },
-  { title: 'Business Proposal', url: '/proposal', icon: '📄' },
-  { title: 'Whitepaper', url: '/whitepaper', icon: '📑' },
-  { title: 'Tokenomics', url: '/tokenomics', icon: '💰' },
-  { title: 'About Lehn', url: '/about', icon: '🐶' },
-  { title: 'Blog', url: '/blog', icon: '📰' },
+  { title: 'Home', url: 'https://www.lehn.life/', icon: '🏠' },
+  { title: 'Business Proposal', url: 'https://www.lehn.life/proposal', icon: '📄' },
+  { title: 'Whitepaper', url: 'https://www.lehn.life/whitepaper', icon: '📑' },
+  { title: 'Tokenomics', url: 'https://www.lehn.life/tokenomics', icon: '💰' },
+  { title: 'About Lehn', url: 'https://www.lehn.life/about', icon: '🐶' },
+  { title: 'Blog', url: 'https://www.lehn.life/blog', icon: '📰' },
   // You can keep or remove these additional sections if needed
   // { title: 'Puppy News', url: '/puppy-news', icon: '🐶' },
   // { title: 'Health Tips', url: '/health-tips', icon: '🏥' },
