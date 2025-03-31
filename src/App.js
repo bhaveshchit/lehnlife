@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import theme from './styles/theme';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Footer from './components/Footer';
+import BusinessPlan from './pages/sections/BusinessPlan';
+import WhitePaper from './pages/sections/Whitepaper';
+import Tokenomics from './pages/sections/Tokonomics';
+import LehnStory from './pages/sections/About';
+import {BlogList, BlogPost } from './pages/sections/News';
+//import AdoptionStories from './pages/sections/AdoptionStories';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/proposal" element={<BusinessPlan />} />
+          <Route path="/whitepaper" element={<WhitePaper />} />
+          <Route path="/tokenomics" element={<Tokenomics />} />
+          <Route path="/about" element={<LehnStory />} />
+          <Route path="/blog" element={<BlogList />} />
+      <Route path="/blog/:postId" element={<BlogPost />} />
+        {/*  <Route path="/adoption-stories" element={<AdoptionStories />} /> */}
+        </Routes>
+        <Footer />
+      </Router>
+    </ThemeProvider>
   );
 }
-
-export default App;
