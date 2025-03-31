@@ -444,7 +444,7 @@ const Home = () => {
                 '100%': { backgroundPosition: '200% center' }
               }
             }}>
-              "HUSTLE, PATIENCE, AND A VISION WILL MAKE YOU UNSTOPPABLE"
+              Wag more, worry less—success is just a squirrel chase away.
             </Typography>
           </motion.div>
 
