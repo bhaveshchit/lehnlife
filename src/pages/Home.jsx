@@ -506,6 +506,111 @@ const Home = () => {
             </Button>
           </motion.div>
         </Box>
+        {/* lehn subs links */}
+        {/* Add this code to your Hero Section, just before or after the main CTA button */}
+<Box sx={{ 
+  display: 'flex', 
+  gap: 3,
+  justifyContent: 'center',
+  flexWrap: 'wrap',
+  mt: 4
+}}>
+  {/* Lehn.Life Button */}
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <Button 
+      variant="contained"
+      size="large"
+      component="a"
+      href="https://lehn.shop"
+      target="_blank"
+      sx={{
+        background: 'linear-gradient(45deg, rgba(72,219,251,0.7) 0%, rgba(255,107,107,0.7) 100%)',
+        color: 'white',
+        padding: '12px 36px',
+        fontSize: '1.2rem',
+        fontWeight: 600,
+        borderRadius: '50px',
+        backdropFilter: 'blur(8px)',
+        border: '1px solid rgba(255,255,255,0.3)',
+        boxShadow: '0 8px 32px rgba(72, 219, 251, 0.3)',
+        position: 'relative',
+        overflow: 'hidden',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.3) 50%, transparent 55%)',
+          backgroundSize: '300% 300%',
+          animation: 'shimmer 3s infinite linear',
+          opacity: 0.5,
+          zIndex: -1
+        },
+        '&:hover': {
+          boxShadow: '0 12px 40px rgba(72, 219, 251, 0.5)',
+          '&::before': {
+            animation: 'shimmer 2s infinite linear'
+          }
+        }
+      }}
+    >
+      lehn.shop
+    </Button>
+  </motion.div>
+
+  {/* Lehn.Live Button */}
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <Button 
+      variant="contained"
+      size="large"
+      component="a"
+      href="https://lehn.live"
+      target="_blank"
+      sx={{
+        background: 'linear-gradient(45deg, rgba(255,107,107,0.7) 0%, rgba(72,219,251,0.7) 100%)',
+        color: 'white',
+        padding: '12px 36px',
+        fontSize: '1.2rem',
+        fontWeight: 600,
+        borderRadius: '50px',
+        backdropFilter: 'blur(8px)',
+        border: '1px solid rgba(255,255,255,0.3)',
+        boxShadow: '0 8px 32px rgba(255, 105, 135, 0.3)',
+        position: 'relative',
+        overflow: 'hidden',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.3) 50%, transparent 55%)',
+          backgroundSize: '300% 300%',
+          animation: 'shimmer 3s infinite linear',
+          opacity: 0.5,
+          zIndex: -1
+        },
+        '&:hover': {
+          boxShadow: '0 12px 40px rgba(255, 105, 135, 0.5)',
+          '&::before': {
+            animation: 'shimmer 2s infinite linear'
+          }
+        }
+      }}
+    >
+      lehn.live
+    </Button>
+  </motion.div>
+</Box>
       </SectionWrapper>
 
       {/* Crypto Introduction Section */}
