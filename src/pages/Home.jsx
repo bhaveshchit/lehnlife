@@ -244,64 +244,69 @@ const Home = () => {
           justifyContent: 'center',
           alignItems: 'center'
         }}>
-          {/* New Whoop's Section */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ 
-              opacity: 1, 
-              y: 0,
-              transition: { 
-                duration: 0.8,
-                delay: 0.2
-              }
-            }}
-            whileHover={{ scale: 1.05 }}
-            style={{
-              marginBottom: '2rem',
-              position: 'relative',
-              zIndex: 1
-            }}
-          >
-            <Typography variant="h2" sx={{
-              fontSize: { xs: '3rem', md: '4rem' },
-              fontWeight: 900,
-              lineHeight: 1,
-              color: 'white',
-              textTransform: 'uppercase',
-              letterSpacing: '0.2em',
-              textShadow: '0 2px 10px rgba(0,0,0,0.3)',
-              position: 'relative',
-              display: 'inline-block',
-              px: 4,
-              py: 2,
-              '&::before': {
-                content: '""',
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                background: 'linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%)',
-                borderRadius: '50px',
-                zIndex: -1
-              },
-              '&::after': {
-                content: '""',
-                position: 'absolute',
-                top: '-5px',
-                left: '-5px',
-                right: '-5px',
-                bottom: '-5px',
-                background: 'linear-gradient(45deg, #FF6B6B 0%, #48DBFB 100%)',
-                borderRadius: '50px',
-                zIndex: -2,
-                filter: 'blur(10px)',
-                opacity: 0.7
-              }
-            }}>
-              Whoop's
-            </Typography>
-          </motion.div>
+       {/* New Whoop's Section */}
+<motion.div
+  initial={{ opacity: 0, y: -20 }}
+  animate={{
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      delay: 0.2
+    }
+  }}
+  whileHover={{ scale: 1.05 }}
+  style={{
+    marginBottom: '2rem',
+    position: 'relative',
+    zIndex: 1
+  }}
+>
+  <Typography
+    variant="h2"
+    sx={{
+      fontSize: { xs: '3rem', md: '4rem' },
+      fontWeight: 900,
+      lineHeight: 1,
+      textTransform: 'uppercase',
+      letterSpacing: '0.2em',
+      textShadow: '0 0 20px rgba(255, 215, 0, 0.8)',
+      position: 'relative',
+      display: 'inline-block',
+      px: 4,
+      py: 2,
+      background: 'linear-gradient(90deg,rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255))',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      '&::before': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 140, 0, 0.1) 60%)',
+        borderRadius: '50px',
+        zIndex: -1
+      },
+      '&::after': {
+        content: '""',
+        position: 'absolute',
+        top: '-5px',
+        left: '-5px',
+        right: '-5px',
+        bottom: '-5px',
+        background: 'linear-gradient(45deg,rgb(255, 255, 255), #FFB700)',
+        borderRadius: '50px',
+        zIndex: -2,
+        filter: 'blur(10px)',
+        opacity: 0.7
+      }
+    }}
+  >
+    Whoop's
+  </Typography>
+</motion.div>
 
           {/* LehnCoin Image */}
           <motion.div
