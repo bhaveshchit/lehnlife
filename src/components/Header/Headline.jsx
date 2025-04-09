@@ -4,11 +4,11 @@ import { useEffect } from 'react';
 
 const MovingHeadlines = () => {
   const headlines = [
-    "🚀 LehnCoin just hit $1M market cap!",
-    "🔥 New exchange listing confirmed for next week",
-    "📢 Lehn's Treats partnership announced with major pet brands",
-    "💎 10,000 LEHN airdrop happening this Friday",
-    "🎮 Play-to-earn game beta launching soon"
+    "🚀 Coming Soon!",
+    "🔥 Coming Soon",
+    "📢 Coming Soon",
+    "💎 Coming Soon",
+    "🎮 Coming Soon"
   ];
 
   // Double the array for seamless looping
