@@ -323,7 +323,7 @@ const Home = () => {
             whileTap={{ scale: 0.95 }}
           >
              <img 
-    src="https://i.ibb.co/ZRSj4hWc/Whats-App-Image-2025-03-30-at-14-41-35-26874834-removebg-preview.png" 
+    src="https://i.ibb.co/JRkMhJnZ/file-00000000eea451f780bfa141efc6ae4a-conversation-id-67f2ccfe-3e68-8009-ba23-1ed12f539b83-message-i.png" 
     alt="Lehn" 
     style={{ width: 500, height: 500, borderRadius: '50%' }} 
   />
@@ -683,7 +683,7 @@ const Home = () => {
                     boxShadow: 6
                   }}>
                     <motion.img 
-                      src="https://i.ibb.co/ZRSj4hWc/Whats-App-Image-2025-03-30-at-14-41-35-26874834-removebg-preview.png" 
+                      src="https://i.ibb.co/JRkMhJnZ/file-00000000eea451f780bfa141efc6ae4a-conversation-id-67f2ccfe-3e68-8009-ba23-1ed12f539b83-message-i.png" 
                       alt="LehnCoin" 
                       style={{ 
                         width: '100%', 
