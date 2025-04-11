@@ -4,11 +4,11 @@ import { useEffect } from 'react';
 
 const MovingHeadlines = () => {
   const headlines = [
-    "🚀 Coming Soon!",
-    "🔥 Coming Soon",
-    "📢 Coming Soon",
-    "💎 Coming Soon",
-    "🎮 Coming Soon"
+    "🚀 mntANWG8MW1jWwvKP9Sde13SHAuhHKZUpfJCusKMZQC",
+    "🔥 mntANWG8MW1jWwvKP9Sde13SHAuhHKZUpfJCusKMZQC",
+    "📢 mntANWG8MW1jWwvKP9Sde13SHAuhHKZUpfJCusKMZQC",
+    "💎 mntANWG8MW1jWwvKP9Sde13SHAuhHKZUpfJCusKMZQC",
+    "🎮 mntANWG8MW1jWwvKP9Sde13SHAuhHKZUpfJCusKMZQC"
   ];
 
   // Double the array for seamless looping
